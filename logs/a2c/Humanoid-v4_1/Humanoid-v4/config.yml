@@ -1,0 +1,24 @@
+!!python/object/apply:collections.OrderedDict
+- - - n_timesteps
+    - 2000000.0
+  - - normalize
+    - true
+  - - policy
+    - MlpPolicy
+  - - policy_kwargs
+    - net_arch:
+        pi:
+        - 256
+        - 128
+        - 64
+        - 32
+        vf:
+        - 256
+        - 128
+        - 64
+        - 32
+      optimizer_class: !!python/name:torch.optim.rmsprop.RMSprop ''
+      optimizer_kwargs:
+        alpha: 0.99
+        eps: 1.0e-05
+        weight_decay: 0

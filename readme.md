@@ -11,7 +11,7 @@ This repository contains code and resources for training, evaluating, and visual
 
 ### Simulating a Model  
 To simulate a trained RL model in the Walker2D environment:  
-1. Ensure you have the required dependencies installed (see [Installation](#installation)).  
+1. Ensure you have the required dependencies installed.  
 2. Run the `simulate.py` script:  
 
 ```bash
